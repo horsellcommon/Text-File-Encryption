@@ -14,3 +14,7 @@ Returning users:
 2. Click on "Use key"
 3. Select a file that contains text
 4. Select either encrypt or decrypt
+
+## Useful Links
+
+Download releases [here](https://github.com/horsellcommon/Text-File-Encryption/releases).
