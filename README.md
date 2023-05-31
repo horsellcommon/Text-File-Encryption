@@ -1,4 +1,4 @@
-# Text Encryption/Decrpytion
+# Text Encryption/Decryption
 
 This is a standalone text file encryption/decryption program and should work with any file containing text.
 
