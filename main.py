@@ -16,9 +16,11 @@ def exit_program():
 def select_output():
     global output_file
     output_file = Path(askopenfilename())
+    print("SELECTED FILE: " + str(output_file))
 def select_key():
     global key_grabber
     key_grabber = Path(askopenfilename())
+    print("SELECTED KEY: " + str(key_grabber))
 
 def open_popup():
    popup = Toplevel(gui)
@@ -59,6 +61,7 @@ def encrypt_output():
         encrypt_data = fernet.encrypt(original)
         with open(output_file, "wb") as encrypted_file:
             encrypted_file.write(encrypt_data)
+        print("ENCRYPTED FILE: " + str(output_file))
     else:
         sys.exit()
 def decrypt_output():
@@ -68,6 +71,7 @@ def decrypt_output():
         decrypted = fernet.decrypt(encrypted)
         with open(output_file, "wb") as decrypted_output_data:
             decrypted_output_data.write(decrypted)
+        print("DECRYPTED FILE: " + str(output_file))
     
 
 gui.geometry("380x150")
